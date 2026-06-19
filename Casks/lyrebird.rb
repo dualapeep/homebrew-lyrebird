@@ -1,13 +1,22 @@
 cask "lyrebird" do
-  version "0.1.38"
-  sha256 "d5a3d907d155794d717139d4fe2e1c004db120830493ed5b60a890d725002928"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://d21pmv6rhp0qg2.cloudfront.net/downloads/Lyrebird-#{version}-arm64.dmg"
+  version "0.1.40"
+  on_arm do
+    sha256 "a6ca43fc6519831c3fc050aa0cfc8d5406edbba3cf02c4d01ea2281e2d806338"
+  end
+  on_intel do
+    sha256 "130d32aab2d19f9d0ac9da7e92407ff90acbacd88f72f0f37bc744165a970315"
+  end
+
+  url "https://d21pmv6rhp0qg2.cloudfront.net/downloads/Lyrebird-#{version}-#{arch}.dmg"
   name "Lyrebird"
   desc "Superhuman-style inbox for triaging LinkedIn DMs"
   homepage "https://github.com/dualapeep/Lyrebird"
 
-  depends_on arch: :arm64
+  # The app self-updates (electron-updater), so Homebrew installs once
+  # and steps back rather than managing version upgrades.
+  auto_updates true
 
   app "Lyrebird.app"
 
