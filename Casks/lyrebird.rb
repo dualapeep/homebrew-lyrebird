@@ -1,6 +1,6 @@
 cask "lyrebird" do
-  version "0.1.35"
-  sha256 "c1dbc662ea52eee3eba3502f0b2a7746d38e8446a94d6575d896affc6a65f1ee"
+  version "0.1.36"
+  sha256 "b7e33bf5f693db29cca6c9d664a195c55166e33dbbc310b0cd8bfd15014f545a"
 
   url "https://d21pmv6rhp0qg2.cloudfront.net/downloads/Lyrebird-#{version}-arm64.dmg"
   name "Lyrebird"
