@@ -1,12 +1,12 @@
 cask "lyrebird" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.54"
+  version "0.1.55"
   on_arm do
-    sha256 "b7b9b99a0fb483ae6558f3f32fbceab75a2d4dea97d6b3064e4f38392dcb6ddd"
+    sha256 "f7a536da8e75278d389f68d1569c029c15654ffea1cf04c5076809df5c9ed7a8"
   end
   on_intel do
-    sha256 "d8f776f287bdc523655d7edd2b82fe1b10f4e32b1d279fc5ee0f848e81201bbe"
+    sha256 "e6d6e4cddc00997ad0cba57d28a7d7ecba5699ccb0a46d775e91e5a41c4c09dd"
   end
 
   url "https://d21pmv6rhp0qg2.cloudfront.net/downloads/Lyrebird-#{version}-#{arch}.dmg"
